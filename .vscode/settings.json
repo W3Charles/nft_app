@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "sepolia"
-    ]
+    ],
+    "solidity.defaultCompiler": "localFile"
 }
