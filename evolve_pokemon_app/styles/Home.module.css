@@ -13,7 +13,7 @@
 }
 
 .title a {
-  color: #f213a4;
+  color: #53bfdb;
   text-decoration: none;
 }
 
@@ -26,7 +26,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
@@ -40,10 +40,18 @@
 }
 
 .description {
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+.descriptionTwo {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.05rem;
+  color: #afafaf;
 }
 
 .code {
@@ -93,6 +101,16 @@
   margin: 0;
   font-size: 1.25rem;
   line-height: 1.5;
+}
+
+.claimBtn {
+  background-color: #2081e2 !important;
+  color: white !important;
+}
+
+.evolveBtn {
+  background-color: #be5649 !important;
+  color: white !important;
 }
 
 .logo {
