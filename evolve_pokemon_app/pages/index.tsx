@@ -1,8 +1,9 @@
-import { ConnectWallet, ThirdwebNftMedia, Web3Button, useAddress, useContract, useOwnedNFTs } from "@thirdweb-dev/react";
+import { ThirdwebProvider, ConnectWallet, ThirdwebNftMedia, Web3Button, useAddress, useContract, useOwnedNFTs } from "@thirdweb-dev/react";
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 
-const Home: NextPage = () => {
+function App() {
+
   const { contract } = useContract(
     "0xc30B9Bb2E6849Ab9bbFe5c6b253D8f0b8f48ADaA"
   );
@@ -12,7 +13,8 @@ const Home: NextPage = () => {
   const {data: nfts} = useOwnedNFTs(contract, address);
 
   return (
-    <div className={styles.container}>
+    <ThirdwebProvider activeChain="polygon">
+      <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="#">Pokemon Evolve NFT</a> club!
@@ -35,8 +37,6 @@ const Home: NextPage = () => {
             </div>
           ))}
         </div>
-
-        {/* <br /> */}
         
         <br />
 
@@ -61,8 +61,22 @@ const Home: NextPage = () => {
         </Web3Button>
 
       </main>
-    </div>
-  );
-};
+      </div>
+    </ThirdwebProvider>
+  )
+}
 
-export default Home;
+// function Component() {
+//   const { contract, isLoading } = useContract("0xc30B9Bb2E6849Ab9bbFe5c6b253D8f0b8f48ADaA");
+// }
+
+
+// const Home: NextPage = () => {
+  
+
+//   return (
+    
+//   );
+// };
+
+export default App;
