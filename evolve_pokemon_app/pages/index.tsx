@@ -2,8 +2,7 @@ import { ThirdwebProvider, ConnectWallet, ThirdwebNftMedia, Web3Button, useAddre
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 
-function App() {
-
+const Home: NextPage = () => {
   const { contract } = useContract(
     "0xc30B9Bb2E6849Ab9bbFe5c6b253D8f0b8f48ADaA"
   );
@@ -14,7 +13,7 @@ function App() {
 
   return (
     <ThirdwebProvider activeChain="polygon">
-      <div className={styles.container}>
+    <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="#">Pokemon Evolve NFT</a> club!
@@ -37,6 +36,8 @@ function App() {
             </div>
           ))}
         </div>
+
+        {/* <br /> */}
         
         <br />
 
@@ -61,22 +62,10 @@ function App() {
         </Web3Button>
 
       </main>
-      </div>
+    </div>
     </ThirdwebProvider>
-  )
-}
-
-// function Component() {
-//   const { contract, isLoading } = useContract("0xc30B9Bb2E6849Ab9bbFe5c6b253D8f0b8f48ADaA");
-// }
+  );
+};
 
 
-// const Home: NextPage = () => {
-  
-
-//   return (
-    
-//   );
-// };
-
-export default App;
+export default Home;
