@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider } from "@thirdweb-dev/react";
+import { ThirdwebProvider, useContract } from "@thirdweb-dev/react";
 import { Sepolia } from "@thirdweb-dev/chains";
 import "../styles/globals.css";
 
