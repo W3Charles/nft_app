@@ -12,7 +12,6 @@ const Home: NextPage = () => {
   const {data: nfts} = useOwnedNFTs(contract, address);
 
   return (
-    <ThirdwebProvider activeChain="polygon">
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -63,7 +62,6 @@ const Home: NextPage = () => {
 
       </main>
     </div>
-    </ThirdwebProvider>
   );
 };
 
