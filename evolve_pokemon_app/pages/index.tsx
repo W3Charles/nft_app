@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           {nfts?.map((nft) => (
             <div key={nft.metadata.id.toString()} className={styles.card}>
-              <ThirdwebNftMedia metadata={nft.metadata} style={{ width: "250px", height: "250px" }} />
+              <ThirdwebNftMedia metadata={nft.metadata} />
               <br />
               {nft.metadata.name}
             </div>
