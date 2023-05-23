@@ -1,4 +1,4 @@
-<h1 align="center">Pokemon Evolve App 👋</h1>
+<h1 align="center">Welcome to my Pokemon Evolve App 👋</h1>
 <p>
   <a href="https://github.com/W3Charles/nft_app/blob/main/README.md" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
