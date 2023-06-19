@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> Pokémon Evolve is an exciting app that allows you to create a unique NFT by combining two NFTs, built with Thirdweb SDk and Next. With this app, you can mint two NFTs and combine them to get a brand-new NFT that's one-of-a-kind and truly special.
+> Pokémon Evolve is an exciting app that allows you to create a unique NFT by combining two NFTs, built with Thirdweb SDK and Next. With this app, you can mint two NFTs and combine them to get a brand-new NFT that's one-of-a-kind and truly special.
 
 ### 🏠 [Homepage](https://github.com/W3Charles/nft_app)
 
